@@ -28,3 +28,10 @@ function updateServer() {
     });
   }
 
+  connection.connect(function(err) {
+    if (err) throw err;
+    console.log("\nWelcome to the Employee Management System!\n");
+    startEmployeeManager();
+    updateServer();
+  });
+
