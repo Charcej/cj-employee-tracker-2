@@ -42,32 +42,32 @@ VALUES ("Lawyer", 180000, 4 );
 INSERT INTO employee (first_name, last_name, role_id)
 VALUES ("Angus", "Young", 1);
 INSERT INTO employee (first_name, last_name, role_id)
-VALUES ("JC", "Chasez", 2);
+VALUES ("Jimi", "Hendrix", 2);
 INSERT INTO employee (first_name, last_name, role_id)
-VALUES ("Chris", "Kirkpatrick", 3);
+VALUES ("Steve", "Vai", 3);
 INSERT INTO employee (first_name, last_name, role_id)
-VALUES ("Joey", "Fatone", 4);
+VALUES ("Jeff", "Beck", 4);
 INSERT INTO employee (first_name, last_name, role_id)
-VALUES ("Lance", "Bass", 5);
+VALUES ("Malcolm", "Young", 5);
 INSERT INTO employee (first_name, last_name, role_id)
-VALUES ("Britney", "Spears", 6);
+VALUES ("Eric", "Clapton", 6);
 INSERT INTO employee (first_name, last_name, role_id)
-VALUES ("Christina", "Aguilera", 7);
+VALUES ("Joan", "Jett", 7);
 INSERT INTO employee (first_name, last_name, role_id)
-VALUES ("Nick", "Carter", 8);
+VALUES ("Lita", "Ford", 8);
 INSERT INTO employee (first_name, last_name, role_id)
-VALUES ("AJ", "McLean", 2);
+VALUES ("Eddie", "Halen", 2);
 INSERT INTO employee (first_name, last_name, role_id)
-VALUES ("Howie", "Dorough", 4);
+VALUES ("Neil", "Young", 4);
 INSERT INTO employee (first_name, last_name, role_id)
-VALUES ("Kevin", "Richardson", 6);
+VALUES ("Ravi", "Shankar", 6);
 INSERT INTO employee (first_name, last_name, role_id)
-VALUES ("Brian", "Littrell", 8);
+VALUES ("Brian", "May", 8);
 INSERT INTO employee (first_name, last_name, role_id)
-VALUES ("Melanie", "Brown", 2);
+VALUES ("Jonny", "Greenwood", 2);
 INSERT INTO employee (first_name, last_name, role_id)
-VALUES ("Melanie", "Chisholm", 4);
+VALUES ("Chuck", "Berry", 4);
 INSERT INTO employee (first_name, last_name, role_id)
-VALUES ("Emma", "Bunton", 6);
+VALUES ("Jimmy", "Page", 6);
 INSERT INTO employee (first_name, last_name, role_id)
-VALUES ("Victoria", "Beckham", 8);
+VALUES ("BB", "King", 8);
