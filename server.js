@@ -90,3 +90,34 @@ function startEmployeeManager() {
       });
   }
 
+  function viewAllEmployees() {
+    console.log("   ");
+    var query =
+      "SELECT employee.id, first_name AS firstname, last_name AS lastname, title AS role, name AS department, salary as salary FROM employee INNER JOIN role ON employee.role_id = role.id INNER JOIN department ON role.department_id = department.id;";
+    connection.query(query, function(err, res) {
+      if (err) throw err;
+      console.table(res);
+      startEmployeeManager();
+    });
+  }
+  
+  function viewAllDepartments() {
+    console.log("   ");
+    var query = "SELECT id, name AS department FROM department";
+    connection.query(query, function(err, res) {
+      if (err) throw err;
+      console.table(res);
+      startEmployeeManager();
+    });
+  }
+  
+  function viewAllRoles() {
+    console.log("   ");
+    var query =
+      "SELECT r.id, title AS role, salary, name AS department FROM role r LEFT JOIN department d ON department_id = d.id";
+    connection.query(query, function(err, res) {
+      if (err) throw err;
+      console.table(res);
+      startEmployeeManager();
+    });
+  }
