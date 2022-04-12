@@ -236,7 +236,7 @@ function addEmployee() {
         {
           name: "role",
           type: "list",
-          message: "Which role does this employee have?",
+          message: "Which role does this employee now have?",
           choices: allroles
         }
       ])
