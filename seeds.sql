@@ -1,5 +1,6 @@
 USE cj_employee_trackerDB;
--- departments
+
+-- these are all of the departments
 INSERT INTO department (name)
 VALUES ("Sales");
 
@@ -12,7 +13,7 @@ VALUES ("Finance");
 INSERT INTO department (name)
 VALUES ("Legal");
 
--- roles
+-- these are all the roles
 INSERT INTO role (title, salary, department_id)
 VALUES ("Sales Lead", 120000, 1 );
 
@@ -38,7 +39,7 @@ INSERT INTO role (title, salary, department_id)
 VALUES ("Lawyer", 180000, 4 );
 
 
--- employees 
+-- these are all the employees 
 INSERT INTO employee (first_name, last_name, role_id)
 VALUES ("Angus", "Young", 1);
 INSERT INTO employee (first_name, last_name, role_id)
