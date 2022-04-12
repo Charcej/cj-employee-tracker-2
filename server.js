@@ -1,7 +1,9 @@
+// import requirements
 const inquirer = require("inquirer");
 const mysql = require("mysql2");
 const consoleTable = require("console.table");
 
+// connection
 var connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
@@ -10,7 +12,7 @@ var connection = mysql.createConnection({
     database: "cj_employee_trackerDB"
   });
 
-  // this updates the server on connection
+  // updating the server on connection
 function updateServer() {
     connection.query("SELECT * from role", function(error, res) {
       allroles = res.map(role => ({ name: role.title, value: role.id }));
@@ -28,6 +30,7 @@ function updateServer() {
     });
   }
 
+  // title and cue update and cue options
   connection.connect(function(err) {
     if (err) throw err;
     console.log("\nWelcome to Employee Tracker!\n");
@@ -35,7 +38,7 @@ function updateServer() {
     updateServer();
   });
 
-
+// options
 function startEmployeeManager() {
     inquirer
       .prompt({
@@ -90,6 +93,7 @@ function startEmployeeManager() {
       });
   }
 
+  // view all employees
   function viewAllEmployees() {
     console.log("   ");
     var query =
@@ -101,6 +105,7 @@ function startEmployeeManager() {
     });
   }
   
+  // view all departments
   function viewAllDepartments() {
     console.log("   ");
     var query = "SELECT id, name AS department FROM department";
@@ -111,6 +116,7 @@ function startEmployeeManager() {
     });
   }
   
+  // view all roles
   function viewAllRoles() {
     console.log("   ");
     var query =
@@ -122,7 +128,7 @@ function startEmployeeManager() {
     });
   }
 
-
+// add employee
 function addEmployee() {
     updateServer();
     inquirer
@@ -160,6 +166,7 @@ function addEmployee() {
         );
       });
   }
+  // add department
   function addDepartment() {
     updateServer();
     inquirer
@@ -185,6 +192,7 @@ function addEmployee() {
         );
       });
   }
+  // add role
   function addRole() {
     updateServer();
     inquirer
@@ -223,6 +231,7 @@ function addEmployee() {
         );
       });
   }
+  // update employee role
   function updateEmployeeRole() {
     updateServer();
     inquirer
