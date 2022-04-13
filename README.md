@@ -16,7 +16,7 @@ A CLI that keeps track of employees with a database that you can interact with b
 ## Version
 This is the first version I was able to put together. 1.0.0
 ## Languages
- JavaScript, Node
+ JavaScript, Node JS, MySQL, Inquirer
 ## Installation
 Clone the repo. NPM Install. Change PW in server.js. Then 'npm start' or 'node server.js'. (If you run into an error you may need to go into mysql and source schema.sql and seeds.sql.)
 ## Screenshot
